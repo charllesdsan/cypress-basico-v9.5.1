@@ -5,8 +5,8 @@ describe('Login gerfloor', function() {
   it('apiLogin', function() {
 
     cy.request('POST', 'https://sisw-dev.gertec.com.br:8080/api/Auth/login', {
-        login: Cypress.env('login'),
-        password: Cypress.env('senha'),
+        login: "charlles",
+        password: "Acesso@001",
         idCurrentBranch: '3',
         }).then((response) => {
           expect(response).property('status').to.equal(200)
@@ -15,7 +15,8 @@ describe('Login gerfloor', function() {
   })
 
 
-  it('getLogin', function() {
+  
+  it.skip('getLogin', function() {
 
     let szIdProfile
     let szUsername
