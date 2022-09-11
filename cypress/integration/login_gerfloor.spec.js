@@ -15,8 +15,8 @@ describe('Login gerfloor', function() {
   })
 
 
-  
-  it.skip('getLogin', function() {
+
+  it('getLogin', function() {
 
     let szIdProfile
     let szUsername
